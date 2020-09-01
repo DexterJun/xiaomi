@@ -1,0 +1,34 @@
+/* 公共样式 */
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::before,
+.claerfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+    /* 为body添加宽度限制，保证屏幕过小时中间容器不会发生溢出 */
+    min-width: 1226px;
+}
+/* 设置一个类，用来表示中间容器的宽度 */
+.w{
+    /* 固定容器宽度 */
+    width: 1226px;
+    /* 设置容器居中 */
+    margin: 0 auto;
+}
+/* 设置超链接的样式 */
+a{
+    text-decoration: none;
+    /* 重置超连接的颜色 */
+    color: #333;
+}
+/* 去除列表的项目符号 */
+ul{
+    list-style: none;
+}
